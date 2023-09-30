@@ -7,6 +7,9 @@
         * {
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
+        body {
+            background-color: #775B59;
+        }
         h1 {
             text-align: center;
         }
@@ -18,6 +21,8 @@
             border-radius: 5px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
             display: inline-flex;
+            width: auto;
+            text-align: center;
         }
         .container2 {
             background-color: #f0f0f0;
@@ -26,6 +31,18 @@
             margin: 20px;
             border-radius: 5px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            display: inline-flex;
+        }
+        .container3 {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 200px
         }
         img {
             width: 100%;
@@ -37,10 +54,20 @@
 <body>
     <h1>TOP TIER FILIPINO FOODS</h1>
     <p style="text-align: center">all facts</p>
+    <!--
+        1. style
+    -->
     <hr>
+    
     <div class="container">
+        <!--
+            2. class
+        -->
         <figure>
         <img src="https://www.lutongpinoyrecipe.com/wp-content/uploads/2020/12/lutong-pinoy-pork-sinigang-1200x900.jpg" alt="sinigang">
+        <!--
+            3. src
+        -->
         <figcaption>Sinigang</figcaption>
         </figure>
         <figure>
@@ -52,6 +79,108 @@
         <figcaption>Bicol Express</figcaption>
         </figure>
     </div>
-    <div class="container2"></div>
+    <div class="container2">
+        <table style="border: 1px solid black; display: inline-block;">
+            <caption>
+                <strong>CANDIDATES</strong>
+            </caption>
+            <thead style="border: 1px solid black">
+                <tr style="border: 1px solid black">
+                    <th style="border: 1px solid black">Food</th>
+                    <th style="border: 1px solid black">Calories</th>
+                    <th style="border: 1px solid black">Tier</th>
+                </tr>
+            </thead>
+            <tbody style="border: 1px solid black">
+                <tr style="border: 1px solid black">
+                    <td style="border: 1px solid black" >Sisig</td>
+                    <td style="border: 1px solid black" rowspan="2">Wag mo na isipin</td>
+                    <!-- 
+                        4. rowspan
+                     -->
+                    <td style="border: 1px solid black">S</td>
+                </tr>
+                <tr style="border: 1px solid black">
+                    <td style="border: 1px solid black">Bicol Express</td>
+                    <td style="border: 1px solid black">S</td>
+                </tr>
+                <tr style="border: 1px solid black">
+                    <td style="border: 1px solid black">Sinigang</td>
+                    <td style="border: 1px solid black">Sakto lang</td>
+                    <td style="border: 1px solid black">S</td>
+                </tr>
+                <tr style="border: 1px solid black">
+                    <td style="border: 1px solid black" colspan="3">Follow your heart</td>
+                    <!-- 
+                        5. colspan
+                     -->
+                </tr>
+            </tbody>
+        </table>
+    </div>   
+    <br/>
+    <div class="container2">
+        <div translate="no">
+            <!-- 
+                1. translate
+             -->
+            Nakakain na ba kayo mga tropa?
+        </div>
+        <a href="document.pdf" download="my-document">DLSU-D Cookbook</a>
+        <!-- 
+            2. download
+         -->
+    </div>
+    <br/>
+    <div class="container2">
+        <button disabled>Click me</button>
+        <!-- 
+            3. disabled
+         -->
+    </div>
+    <br/>
+    <div class="container3">
+        <p>Favorite ulam</p>
+        <input type="text" maxlength="20">
+        <!-- 
+            4. maxlength
+         -->
+        <br/>
+        <p>Favorite drinks</p>
+        <input type="password" minlength="20">
+        <!-- 
+            5. minlength
+         -->
+    </div>
+    <div class="container2">
+        <form>
+            <label>
+                <input type="checkbox" name="option1" checked>
+                <!-- 
+                    6. checked
+                 -->
+                Gutom
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="option2">
+                Busog
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="option3">
+                Uhaw
+            </label>
+        </form>
+    </div>
+    <br/>
+    <div class="container2">
+        <audio src="https://drive.google.com/uc?id=1hd4Fo29NYZBJ7CWgMKOJAXETfWqP0v22" type="audio/mp3" preload="auto" controls autoplay loop>
+            <!-- 
+                7, 8, 9, 10. preload, controls, autoplay, loop
+             -->
+            Audio
+        </audio>
+    </div>
 </body>
 </html>
